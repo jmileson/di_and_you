@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "di_and_you"
+version = "0.1.0"
+description = "Dependency Injection and You!"
+authors = ["Joe Mileson <j.mileson@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9.0"
+requests = "^2.25.1"
+beautifulsoup4 = "^4.9.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.4"
+flake8 = "^3.9.2"
+isort = "^5.8.0"
+responses = "^0.13.3"
+requests-mock = "^1.9.2"
+jedi = "^0.18.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+di_and_you = "di_and_you.main:main"

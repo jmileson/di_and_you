@@ -1,0 +1,4 @@
+**/*.pyc
+.vim/
+.envrc
+*.db
